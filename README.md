@@ -1,5 +1,18 @@
 # Getting Started with Create React App
 
+A list to keep track of active and complete tasks.
+
+<h2>About</h2>
+A list to keep track of active and completed tasks.
+
+List saves to browser. 
+
+See live demo at https://shaz.dev or https://shaz.dev/projects/taskslist
+
+CRUD application built with React.JS
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
