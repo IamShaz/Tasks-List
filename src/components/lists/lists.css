@@ -1,0 +1,100 @@
+.lists {
+    -webkit-display: flex;
+    -ms-display: flex;    
+    display: flex;
+    margin: 3em auto;
+    width: 75%;
+    box-shadow: 0 1px 4px 1px #b6b6b6;
+    padding: 3em 2em;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+h2 {
+    margin: 0 0 2em 0;
+    padding: 0.2em 0.5em;
+    height: 1.5em;
+    background-color: #cdd9eb;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.list { 
+    flex: 1;
+    margin: 0 2em;
+}
+.list h2 { text-align: center }
+.list ol { padding-left: 0 }
+
+.list ol li {
+    margin: 1em 0;
+    padding: 0em 0 1em 0;
+    list-style-type: none;
+    border-bottom: 1px solid #BECEE5;
+}
+
+.list ol li .icon { 
+    margin: 0 0 0 1em;
+    cursor: pointer;
+}
+
+.checkboxContainer { cursor: pointer }
+  
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: -1;
+}
+  
+.checkmark {
+    height: 2.2em;
+    width: 2.2em;    
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    z-index: 100000;
+}
+  
+.checkboxContainer:hover .checkmark { background-color: #f0f0f0 }
+  
+.checkmark:after {
+    content: "\2713";
+    font-size: 1.6em;
+    display: none;
+    color: #becee5;
+}
+  
+.inactive .checkboxContainer .checkmark:after { display: block }
+.activeItem { text-decoration: none }
+.completedItem { text-decoration: line-through }
+
+.itemText {
+    min-height: 1.7em;
+    min-width: 25%;
+    width: 100%;
+    margin-left: 1em;
+    border: none;
+    background-color: white;
+}
+
+.itemText:focus { background: #ffffff }
+
+@media (max-width: 1000px) {
+    .lists {
+        width: 85%;
+        padding: 2em 1em;
+    }
+    .list {
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 568px) {
+    .lists {
+        flex-flow: column;
+    }
+    .list {
+        margin: 0em 1em 2em 0;
+    }
+}

@@ -1,0 +1,31 @@
+.saveBanner {
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 2em;
+    background-color: #ffffff;
+    color: #046307;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;    
+}
+
+.show { opacity: 1 !important }
+
+.save {
+    display: block;
+    height: 2.3em;
+    width: 5.5em;
+    margin: 2em auto 0em auto;
+    padding: 0.5em 0.5em;
+    background-color: #becee5;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.save:hover { background-color: #F2F5FB }
+.save:active { background-color: #d4dfee }
+.save .icon { margin-right: 0.5em }

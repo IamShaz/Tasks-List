@@ -1,0 +1,32 @@
+.addItems {
+    width: 32em;
+    text-align: center;
+}
+
+.itemContainer { margin-top: 1em }
+
+.listItem {
+    padding: 0 0 0 1em;
+    box-sizing: border-box;
+    height: 3em;
+    width: 100%;    
+    border-radius: 5px;
+    border: 1px solid #d3d4d3;
+}
+
+.addButton {
+    margin-left: 0.5em;
+    height: 3em;
+    width: 4em;    
+    background-color: #CDD9EB;
+    border: none;
+    border-radius: 5px;
+}
+
+.addButton:hover { background-color: #F2F5FB }
+.addButton:active { background-color: #d4dfee }
+.addButton span { font-size: 2em }
+
+@media (max-width: 568px) {
+    .addItems { width: 90% }
+}
